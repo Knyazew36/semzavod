@@ -2,14 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Index</title>
+    <title>| Семенной завод</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="assets/index-fa463630.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <script type="module" crossorigin src="assets/index-071f5a6d.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body class="--load" style="opacity:0">
@@ -47,7 +48,7 @@
                 </div>
                 <div class="input-wrapper" data-input-parent="">
                   <div class="input-wrapper__placeholder">Телефон</div>
-                  <input class="input" data-input="" required="required" placeholder="Телефон" type="number"/>
+                  <input class="input" data-input="" required="required" placeholder="Телефон"/>
                   <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                     <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -127,10 +128,10 @@
           <div class="header__inner">
             <nav class="header__nav"> 
               <ul>
-                <li><a class="link" href="#">Компания</a></li>
-                <li><a class="link" href="#">Услуги</a></li>
-                <li><a class="link" href="#">Продукция</a></li>
-                <li><a class="link" href="#">Контакты</a></li>
+                <li><a class="link" data-nav-links="test">Компания</a></li>
+                <li><a class="link" data-nav-links="test">Услуги</a></li>
+                <li><a class="link" data-nav-links="test">Продукция</a></li>
+                <li><a class="link" data-nav-links="test">Контакты</a></li>
               </ul>
             </nav>
             <div class="header__logo">
@@ -451,7 +452,7 @@
             <div class="products__left"> 
               <h2 class="title36">Продукция</h2>
               <p class="description">Производим только высококачественную продукцию, которая соответствует всем требованиям ОТК.</p>
-              <button class="button button_black" data-button-form="open">
+              <button class="button button_black desk" data-button-form="open">
                 <p>Сотрудничать</p>
               </button>
             </div>
@@ -509,6 +510,11 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="products__left mob">
+            <button class="button button_black" data-button-form="open">
+              <p>Сотрудничать</p>
+            </button>
           </div>
         </div>
       </section>
