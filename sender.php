@@ -1,7 +1,8 @@
 <?php
 
-$mailSender = 'test@семеннойзавод.рф';
+$mailSender = 'semzavod@xn--80aegbamnwkale2a.xn--p1ai';
 $mailRecipient = 'knyazew.sv@gmail.com';
+
 $boundary = uniqid('np');
 $headers = 'From: ' . $mailSender  . PHP_EOL .
              'Reply-To: ' . $mailSender  . PHP_EOL .
@@ -18,21 +19,22 @@ $messageBody = "This is a MIME encoded message.";
 $messageBody .= "\r\n\r\n--" . $boundary . "\r\n";
 $messageBody .= "Content-type: text/plain;charset=utf-8\r\n\r\n";
 
+
 //Plain text body
-$messageBody .= "Hello,\nThis is a text email, the text/plain version.\n\n";
+$messageBody .= "Заявка с сайта семеннойзавод.рф\n";
 $messageBody .= "Имя: $name\n";
 $messageBody .= "Телефон: $phone\n";
 $messageBody .= "Email: $email\n";
 $messageBody .= "Сообщение: $comment\n";
 $messageBody .= "\r\n\r\n--" . $boundary . "--";
 
-if (!empty($mailRecipient) && isValidEmail($mailRecipient)) {
-    if (mail($mailRecipient, "TEST mail", $messageBody, $headers, '-f '.$mailSender)) {
-        echo "php_mail: Отправлено, получатель ", $mailRecipient;
+// mail($mailRecipient, "TEST mail", $messageBody);
+
+  
+    if (mail($mailRecipient, "Заявка с сайта", $messageBody, $headers, '-f '.$mailSender)) {
+        echo "php_mail: Отправлено";
     } else {
         echo "php_mail: Ошибка, проверьте правильность введенных данных";
     }
-} else {
-    echo "php_mail: Некорректный адрес получателя";
-}
+
 ?>
